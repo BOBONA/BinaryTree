@@ -29,7 +29,7 @@ public class GeneralProcedures {
         Map<Integer, String> elements = new HashMap<>();
         populateElementMap(elements, root, 1);
         int maxWidth = elements.values().stream().mapToInt(String::length).max().orElse(0);
-        for (int line = 0; line < numLevels; line++) {
+        for (int line = 0; line < Math.min(numLevels, height(root)); line++) {
             // the padding formula looks esoteric but makes sense if you look at a diagram
             int paddingSize = ((int) Math.pow(2, numLevels - line - 1) - 1) * (maxWidth + SPACE_WIDTH);
             String padding = space(paddingSize / 2);
