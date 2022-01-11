@@ -133,7 +133,7 @@ public class SearchTree<T extends Comparable<T>> {
     }
 
     /**
-     * @return a visual string representation of the tree, won't work well on large trees
+     * @return a visual string representation of the tree, made for monospace fonts, won't work well on large trees
      */
     @Override
     public String toString() {

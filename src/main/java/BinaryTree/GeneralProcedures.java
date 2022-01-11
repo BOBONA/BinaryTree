@@ -18,6 +18,7 @@ public class GeneralProcedures {
      * Creates a string visual representation of a node.
      * Note that the size of the string will grow exponentially with the height of the node,
      * so this works best for smallish balanced trees.
+     * Also spacing works best for monospace fonts.
      * @param root root node
      * @param numLevels number of levels to print
      * @param <T> node key type
