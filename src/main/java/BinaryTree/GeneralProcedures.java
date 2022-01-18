@@ -167,11 +167,12 @@ public class GeneralProcedures {
     }
 
     /**
-     * @param preorder preorder list for the tree
-     * @param inorder inorder list for the tree
+     * This method is a safe wrapper for the longer signature version.
+     * @param preorder preorder list for the tree, no repeating elements
+     * @param inorder inorder list for the tree, no repeating elements
      * @param <T> key type
      * @return The unique binary tree represented by a given preorder and inorder list.
-     * @throws RuntimeException when the input lists don't share their elements
+     * @throws RuntimeException when the input lists don't share their elements or if a list has a repeating element
      */
     public static <T> Node<T> createFromLists(List<T> preorder, List<T> inorder) {
         if (preorder.size() != inorder.size()) {
@@ -182,12 +183,16 @@ public class GeneralProcedures {
                 throw new RuntimeException("Create tree failed: list elements don't match");
             }
         }
+        if (new HashSet<>(preorder).size() != preorder.size() ||
+            new HashSet<>(inorder).size() != inorder.size()) {
+            throw new RuntimeException("Create tree failed: lists contain repeating elements");
+        }
         Node<T> node = new Node<>(null, null, null, null);
         createFromLists(node, preorder, inorder);
         return node;
     }
 
-    private static <T> void createFromLists(Node<T> node, List<T> preorder, List<T> inorder) {
+    public static <T> void createFromLists(Node<T> node, List<T> preorder, List<T> inorder) {
         node.setKey(preorder.get(0));
         preorder.remove(0);
         int loc = -1;

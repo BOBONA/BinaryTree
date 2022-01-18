@@ -1,0 +1,30 @@
+Entering interactive tree (type MENU for help): 
+Inserted 25
+Inserted 20
+Inserted 15
+Inserted 35
+Inserted 18
+Inserted 10
+Inserted 40
+Inserted 30
+Inserted 33
+           25          
+     20          35    
+  15          30    40 
+10 18          33      
+
+Preorder list: [25, 20, 15, 10, 18, 35, 30, 33, 40]
+Inorder list: [10, 15, 18, 20, 25, 30, 33, 35, 40]
+Deleted 18
+Inserted 45
+Deleted 35
+           25          
+     20          40    
+  15          30    45 
+10             33      
+
+           15          
+     20          10    
+  40    30    55    25 
+            70 50      
+

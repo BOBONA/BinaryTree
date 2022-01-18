@@ -1,0 +1,43 @@
+Entering interactive tree (type MENU for help): 
+Invalid command. Possible commands: 
+(I)nsert <int>
+(D)elete <int>
+(S)earch <int>
+(P)rint
+p(R)eorder
+i(N)order
+p(O)storder
+(C)reate <int...>
+The create command takes two lines beginning with C. The first line takes the preorder listing of a tree. The second line takes the inorder listing of a tree. It does not replace the current tree, only prints it.
+(E)xit
+       9       
+   3           
+     5         
+    4 2        
+
+Inserted 30
+Inserted 15
+Inserted 35
+Inserted 36
+Inserted 37
+           30          
+     15          35    
+                    36 
+                     37
+
+Inserted 17
+Inserted 14
+           30          
+     15          35    
+  14    17          36 
+                     37
+
+Inorder list: [14, 15, 17, 30, 35, 36, 37]
+Deleted 30
+           35          
+     15          36    
+  14    17          37 
+
+Inorder list: [14, 15, 17, 35, 36, 37]
+Preorder list: [35, 15, 14, 17, 36, 37]
+Postorder list: [14, 17, 15, 37, 36, 35]

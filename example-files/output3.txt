@@ -1,0 +1,24 @@
+Entering interactive tree (type MENU for help): 
+Integer must be in the range [0, 99]
+Integer must be in the range [0, 99]
+Could not parse integer
+Inserted 50
+Insert failed: element already present in tree
+Delete failed: element not present in tree
+Could not find 30
+Create tree failed: lists contain repeating elements
+Exiting C command
+Create tree failed: list elements don't match
+Exiting C command
+Inserted 1
+Inserted 2
+Inserted 3
+Inserted 4
+Inserted 5
+Inserted 6
+           50          
+     1                 
+        2              
+         3             
+
+Lower levels hidden...
