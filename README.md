@@ -4,3 +4,5 @@ This was made for my high school algorithms class. The BinaryTree package has a 
 Auto-generated documentation (might be out of date) is in the javadoc folder. See javadoc\allclasses-frame.html for the class list.
 
 A prebuilt InteractiveTree.jar is also available for the test program.
+
+Some example input and output files are in the example-files folder.
